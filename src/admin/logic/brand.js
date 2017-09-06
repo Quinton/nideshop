@@ -5,11 +5,11 @@
  * @return {}     []
  */
 export default class extends think.logic.base {
-  /**
-   * index action logic
-   * @return {} []
-   */
-  indexAction(){
-   
-  }
+    /**
+     * index action logic
+     * @return {} []
+     */
+    indexAction() {
+        this.allowMethods = 'get';
+    }
 }
