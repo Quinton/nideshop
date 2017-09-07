@@ -1,4 +1,4 @@
-FROM 8.1-alpine
+FROM node:8.1-alpine
 WORKDIR /usr/src/app
 COPY ./package.json /usr/src/app/
 RUN yarn install --registry=https://registry.npm.taobao.org
