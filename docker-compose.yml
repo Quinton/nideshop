@@ -1,0 +1,16 @@
+g-netlink:
+  image: 'registry-vpc.cn-hangzhou.aliyuncs.com/ecarx-all/g-netlink:beta'
+  restart: always
+  expose:
+    - 7001/tcp
+  memswap_limit: 0
+  cpu_shares: 100
+  environment:
+    - NPM_CONFIG_LOGLEVEL=info
+    - TIME_ZONE=Asia/Shanghai
+    - EGG_SERVER_ENV=beta
+  labels:
+    aliyun.routing.port_7001: gnetlink
+    aliyun.scale: '1'
+    aliyun.log_store_gnetlink: /usr/src/app/logs/*.log
+    aliyun.log.timestamp: "false"
