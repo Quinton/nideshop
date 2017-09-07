@@ -7,11 +7,11 @@ export default {
   type: 'mysql',
   adapter: {
     mysql: {
-      host: '121.196.193.102',
+      host: process.env.db_host || '127.0.0.1',
       port: '3306',
       database: 'nideshop',
-      user: 'root',
-      password: 'root',
+      user: process.env.db_user || 'root',
+      password: process.env.db_pass || 'root',
       prefix: 'nideshop_',
       encoding: 'utf8'
     },
