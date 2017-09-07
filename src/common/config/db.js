@@ -7,7 +7,7 @@ export default {
   type: 'mysql',
   adapter: {
     mysql: {
-      host: '127.0.0.1',
+      host: '121.196.193.102',
       port: '3306',
       database: 'nideshop',
       user: 'root',
