@@ -37,10 +37,10 @@ exports.model = {
     database: 'nideshop',
     prefix: 'nideshop_',
     encoding: 'utf8mb4',
-    host: '127.0.0.1',
-    port: '3306',
+    host: process.env.db_host || '127.0.0.1',
+    port: process.env.db_user || '3306',
     user: 'root',
-    password: 'root',
+    password: process.env.db_pass || 'root',
     dateStrings: true
   }
 };
