@@ -38,8 +38,8 @@ exports.model = {
     prefix: 'nideshop_',
     encoding: 'utf8mb4',
     host: process.env.db_host || '127.0.0.1',
-    port: process.env.db_user || '3306',
-    user: 'root',
+    port: '3306',
+    user: process.env.db_user || 'root',
     password: process.env.db_pass || 'root',
     dateStrings: true
   }
