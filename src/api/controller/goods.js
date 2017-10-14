@@ -260,7 +260,7 @@ export default class extends Base {
             bannerInfo: {
                 url: '',
                 name: '坚持初心，为你寻觅世间好物',
-                img_url: 'http://yanxuan.nosdn.127.net/8976116db321744084774643a933c5ce.png',
+                img_url: 'http://nideshop.oss-cn-shanghai.aliyuncs.com/8976116db321744084774643a933c5ce.png',
             }
         });
     }
@@ -274,8 +274,8 @@ export default class extends Base {
         return this.success({
             bannerInfo: {
                 url: '',
-                name: '大家都在买的严选好物',
-                img_url: 'http://yanxuan.nosdn.127.net/8976116db321744084774643a933c5ce.png',
+                name: '大家都在买的超宇好物',
+                img_url: 'http://nideshop.oss-cn-shanghai.aliyuncs.com/8976116db321744084774643a933c5ce.png',
             }
         });
     }
